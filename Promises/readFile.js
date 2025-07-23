@@ -1,6 +1,4 @@
-const { rejects } = require('assert');
 const fs = require('fs');
-const { resolve } = require('path');
 
 function promisifiedReadFile(path, encoding = 'utf-8'){
     return new Promise((resolve, reject) => {
